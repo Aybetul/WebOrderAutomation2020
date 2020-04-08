@@ -20,6 +20,30 @@ public class ViewAllOrdersPage extends AbstractBasePage {
    @FindBy(xpath = "//td[2]")
    private List<WebElement> nameLst;
 
+   @FindBy(xpath="//tbody//tr//td[12]")
+   private List< WebElement > expirationDate;
+
+    @FindBy(xpath="//tbody//tr//td[10]")
+    private List< WebElement >cardType;
+
+    @FindBy(xpath="//input[@type='checkbox']")
+    private List<WebElement>  checkBoxList;
+
+
+
+    public List<WebElement> getCheckBoxList(){
+        return checkBoxList;
+    }
+
+
+    public List<String> getCardTypeList(){
+        return BrowserUtilities.TextFromWebElement(cardType);
+    }
+
+   public List<String> getExpirationDatesList(){
+     return BrowserUtilities.TextFromWebElement(expirationDate);
+   }
+
    public List<String > getNameListText(){
        return    BrowserUtilities.TextFromWebElement(nameLst);
    }
@@ -37,8 +61,7 @@ public String clickOnRandomCheckBoxAtTheTableAndReturnName(){
    // driver.findElement(By.id(checkBoxAtTheTable)).click();
 wait.until(ExpectedConditions.elementToBeClickable(By.id(checkBoxAtTheTable))).click();
     String nameBy="(//input[@id='"+checkBoxAtTheTable+"']/../following-sibling::td)[1]";
-  String nameText=  driver.findElement(By.xpath(nameBy)).getText();
-  return nameText;
+    return driver.findElement(By.xpath(nameBy)).getText();
 }
 
 }
