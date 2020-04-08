@@ -1,0 +1,46 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 61.059 s <<< FAILURE! - in TestSuite
+com.weborders.tests.SmokeTest.verifyAllProductsPage  Time elapsed: 21.262 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[test()='View all orders'] (tried for 20 second(s) with 500 milliseconds interval)
+	at com.weborders.tests.SmokeTest.verifyAllProductsPage(SmokeTest.java:15)
+Caused by: org.openqa.selenium.InvalidSelectorException: 
+invalid selector: Unable to locate an element with the xpath expression //a[test()='View all orders'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[test()='View all orders']' is not a valid XPath expression.
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JB2UEEU', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\caliskan\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62021}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c16024ffbdae3d374243d1c302d11324
+*** Element info: {Using=xpath, value=//a[test()='View all orders']}
+	at com.weborders.tests.SmokeTest.verifyAllProductsPage(SmokeTest.java:15)
+
+com.weborders.tests.SmokeTest.verifyAllProductsPage  Time elapsed: 6.021 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#ctl00_MainContent_username"}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JB2UEEU', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\caliskan\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62074}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 04db2c99cb33c1859e2da74f093e8c4e
+*** Element info: {Using=id, value=ctl00_MainContent_username}
+	at com.weborders.tests.SmokeTest.verifyAllProductsPage(SmokeTest.java:14)
+
+com.weborders.tests.SmokeTest.verifyAllProductsPage  Time elapsed: 5.462 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#ctl00_MainContent_username"}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JB2UEEU', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\caliskan\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62124}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b4eaaa7f9b3115ea0dd3bffadef3aeef
+*** Element info: {Using=id, value=ctl00_MainContent_username}
+	at com.weborders.tests.SmokeTest.verifyAllProductsPage(SmokeTest.java:14)
+
